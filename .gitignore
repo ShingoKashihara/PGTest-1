@@ -1,0 +1,5 @@
+/Config/twitter.php
+/vendor/*
+/twitter_images/*
+!.gitkeep
+result.txt
