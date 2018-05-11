@@ -1,0 +1,8 @@
+<?php
+$oauthConfig = [
+    'consumerKey' => '__consumerKey__',
+    'consumerSecret' => '__consumerSecret__',
+    'accessToken' => '__accessToken__',
+    'accessTokenSecret' => '__accessTokenSecret__',
+];
+
