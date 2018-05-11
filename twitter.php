@@ -1,4 +1,10 @@
 <?php
+
+if(!file_exists('Config/twitter.php')){
+    echo "`Config/twitter.php` does not found.\n";
+    exit(1);
+}
+
 require_once 'Config/twitter.php';
 require_once 'Lib/TwitterWrap.php';
 
