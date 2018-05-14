@@ -42,10 +42,16 @@ class TwitterWrap {
      *
      * @param array $params 検索条件
      * @return object json_decode済みの検索結果
+     * @throws Exception
      */
     public function search($params)
     {
         $tweets = $this->_connection->get('search/tweets', $params);
+        if(isset($tweets->errors)){
+            $errors = $tweets->errors;
+            throw new Exception($errors[0]->message, $errors[0]->code);
+        }
+
         return $tweets;
     }
 
